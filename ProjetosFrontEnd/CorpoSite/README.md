@@ -14,11 +14,11 @@ Obetivo mostrar o conhecimento na importância dos componentes e seu uso
     <li>ReactJs</li>
     <li>Bootstrap CDN Versão-5.1</li>
 </ul>
-<strong>Back-end</strong>
+<!-- <strong>Back-end</strong>
 <ul>
     <li>Java</li>
     <li>Ecosystem Spring</li>
-</ul>
+</ul> -->
 <strong>Data Base</strong>
 <li>MySQL</li>
 <h1>Como executar o projeto</h1>
@@ -26,6 +26,7 @@ Obetivo mostrar o conhecimento na importância dos componentes e seu uso
 <ul>
     Clone o repositorio
     Instale as dependicias na sua IDE com o comando: npm install
+    Execute o projeto react em vite.js, através do comando: npm run dev
     <!-- MySQL
     Crie um Data Base com os comandos:
     create database agencia_spring -->
