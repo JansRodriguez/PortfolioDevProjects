@@ -25,7 +25,7 @@ Obetivo mostrar o conhecimento na importância dos componentes e seu uso
 <strong>Front-end</strong>
 <ul>
     Clone o repositorio
-    Instale as dependicias na sua IDE com o comando: npm install
+    Instale as dependicias na sua IDE com o comando: npm install<br/>
     Execute o projeto react em vite.js, através do comando: npm run dev
     <!-- MySQL
     Crie um Data Base com os comandos:
