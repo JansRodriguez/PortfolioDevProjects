@@ -7,7 +7,7 @@ Criamos uma classe servicos para compor o modelo de negocio da classe Modelo
 Obetivo:
 <h4>Criar API para recebimentos de informacoes e testes de endpoints</h4>
 {
-<img src='./src/apidois'>
+<img src='apidois.png'>
 }
 
 <strong>Back-end</strong>
