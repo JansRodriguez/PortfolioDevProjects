@@ -1,0 +1,22 @@
+.header{
+    background-color: goldenrod;
+    height: 150px;
+    width: auto;
+}
+
+.body{
+    height: 240px;
+    width: auto;
+}
+
+.body h1, p{
+    text-align: center;
+    margin: 4%;
+    font-family: 'Arial Narrow';
+}
+
+.footer{
+    background-color: darkgreen;
+    height: 200px;
+    width: auto;
+}
