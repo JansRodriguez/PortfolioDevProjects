@@ -11,5 +11,7 @@ import lombok.Setter;
 @Component //Essa anotação tem a ideia de fazer o Spring instanciae o objeto dessa classe, automaticamente.
 public class LivrosResposta {
     
+
+    //Atributo de resposta do modelo principal (LivrosModelo)
     private String mensagem;
 }

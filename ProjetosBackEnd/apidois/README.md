@@ -10,6 +10,7 @@ Obetivo:
 <h4>Estabelecida conexão do servidor com o navegador da API (funcionando)</h4>
 <img src='apidois.png'>
 <h4>Estabelecida conexão com o banco de dados e geradas a listagem dos itens que serão cadastrados</h4>
+<img src='ConexaoBD.png'>
 <img src='ListagemInicial.png'>
 }
 
