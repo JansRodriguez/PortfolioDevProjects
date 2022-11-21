@@ -27,7 +27,7 @@ public class LivrosModelo {
 
     private Date data;
 
-    private int edicao;
+    private String edicao;
 
     private String editora;
 
