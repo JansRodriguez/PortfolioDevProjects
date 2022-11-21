@@ -21,7 +21,7 @@ public class LivrosControle {
     
     @GetMapping("/teste")
     public String mensagem(){
-        return "Cadastrado de Livros";
+        return "Cadastros de Livros";
     }
 
     //Metodos para buscar a listagem vinda da classe serviços.

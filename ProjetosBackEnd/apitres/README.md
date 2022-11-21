@@ -1,14 +1,14 @@
 # projetoIndividual
-<h2>Desenvolvendo Projeto Maven, uma classe para cadastro, consulta de Livros via ThunderClient ou URL.</h2>
-Nesse segundo projeto, ja faremos a validacao do preenchimento dos atributos como obrigatorios na classe respostaModelo.
+<h2>Desenvolvendo Projeto Maven, uma classe para cadastro, atualizacao, selecao e exclusao dos atributos dos itens (Cursos) via ThunderClient e\ou URL.</h2>
+<h3>Nesse Terceiro projeto, faremos todas as requisicoes mais usuais (GET, POST, PUT, DELETE).</h3>
 
-Criamos uma classe servicos para compor as regras de negocio da classe Modelo.
+<h3>Criamos uma classe servicos para compor as regras de negocio da classe Modelo.</h3>
 
 <h3>Objetivo:</h3>
-<h4>Criar API para recebimentos de informacoes e testes de endpoints</h4>
+<h4>Criar API de uma Entidade para recebimentose alteracoes de informacoes e testes de endpoints</h4>
 <h3>Passos:</h3>
 {
-<h4>Estabelecida conexão do servidor com o navegador através da API (funcionando)</h4>
+<!-- <h4>Estabelecida conexão do servidor com o navegador através da API (funcionando)</h4>
 <img src='apidois.png'>
 <h4>Estabelecida conexão com o banco de dados e geradas a listagem dos itens que serão cadastrados</h4>
 <img src='ConexaoBD.png'>
@@ -19,7 +19,7 @@ Criamos uma classe servicos para compor as regras de negocio da classe Modelo.
 <h3>Objetivo desse segundo projeto comprido</h3>
 <img src='TesteDePostDaAPI.png'>
 <h4>Requisição completa finalizada e sucesso</h4>
-<img src='TesteDePostDaAPISucesso.png'>
+<img src='TesteDePostDaAPISucesso.png'> -->
 }
 
 <strong>Back-end</strong>
