@@ -1,10 +1,10 @@
 # projetoIndividual
-Desenvolvendo Projeto de Maven, uma classe para cadastro, consulta, atualizacao e exclusao de Livros via ThunderClient.
+<h2>Desenvolvendo Projeto Maven, uma classe para cadastro, consulta de Livros via ThunderClient ou URL.</h2>
 Nesse segundo projeto, ja faremos a validacao do preenchimento dos atributos como obrigatorios na classe respostaModelo.
 
-Criamos uma classe servicos para compor o modelo de negocio da classe Modelo
+Criamos uma classe servicos para compor as regras de negocio da classe Modelo.
 
-<h3>Obetivo:</h3>
+<h3>Objetivo:</h3>
 <h4>Criar API para recebimentos de informacoes e testes de endpoints</h4>
 {
 <h4>Estabelecida conexão do servidor com o navegador através da API (funcionando)</h4>
