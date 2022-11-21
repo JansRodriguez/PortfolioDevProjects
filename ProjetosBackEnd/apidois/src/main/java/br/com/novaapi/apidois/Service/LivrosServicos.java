@@ -28,6 +28,7 @@ public class LivrosServicos {
         return lr.findAll();
     }
 
+    //--Serviço para cadatrar
     //Método para cadastrar itens(livros) e trazer a classe LivrosResposta caso não haja a completa inserção dos dados
     //Usarei o tipo ResponseEntity, pois poderá ter tanto o Modelo como Resposta como devolutiva e uma <?>, pois pode ser um dos dois casos.
     //Outra observação é que dentro do parametro do método tem que ter o modelo, pois indica o que devo ou não cadastrar
@@ -40,7 +41,7 @@ public class LivrosServicos {
             lres.setMensagem("O nome do autor da obra é obrigatória!!!");
             return new ResponseEntity<LivrosResposta>(lres, HttpStatus.BAD_REQUEST);
         }
-        else if(lm.getAno().equals("")){ //Vê com o ralf como faz para verificar data nessa linha
+        else if(lm.getData().equals("")){ //Vê com o ralf como faz para verificar data nessa linha
             lres.setMensagem("O ano da obra é obrigatório!");
             return new ResponseEntity<LivrosResposta>(lres, HttpStatus.BAD_REQUEST);
         }
@@ -52,12 +53,11 @@ public class LivrosServicos {
             lres.setMensagem("O nome da editora é obrigatória!!!");
             return new ResponseEntity<LivrosResposta>(lres, HttpStatus.BAD_REQUEST);
         }
-        else if(lm.getISBN().equals("")){
+        else if(lm.getIsbn().equals("")){
             lres.setMensagem("O código ISBN é obrigatório!!");
             return new ResponseEntity<LivrosResposta>(lres, HttpStatus.BAD_REQUEST);
         }
         else{
-
             return new ResponseEntity<LivrosModelo>(lr.save(lm), HttpStatus.CREATED);
         }
     }

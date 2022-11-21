@@ -1,6 +1,6 @@
 package br.com.novaapi.apidois.Model;
 
-//import java.sql.Date;
+import java.sql.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -25,11 +25,11 @@ public class LivrosModelo {
 
     private String autor;
 
-    private String ano;
+    private Date data;
 
-    private String edicao;
+    private int edicao;
 
     private String editora;
 
-    private String ISBN;
+    private String isbn;
 }

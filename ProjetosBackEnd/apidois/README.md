@@ -11,6 +11,7 @@ Obetivo:
 <img src='apidois.png'>
 <h4>Estabelecida conexão com o banco de dados e geradas a listagem dos itens que serão cadastrados</h4>
 <img src='ConexaoBD.png'>
+<h4>No primeiro momento a listagem está vazia pois ainda não há nenhuma item</h4>
 <img src='ListagemInicial.png'>
 }
 
