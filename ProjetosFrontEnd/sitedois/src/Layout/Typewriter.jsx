@@ -1,10 +1,12 @@
+import './Leiaute.css';
+
 import Typewriter from "typewriter-effect";
 
 export default()=>{
     return(
-        <div className="header" style={{width:'100%', height:'100px', backgroundColor:'blue'}}>
+        <div className="type" >
             <Typewriter options={{
-                strings:["Olá...", "Sejam bem-vindos!!"],
+                strings:["Olá, squad...", "Voces estao sumidos!!"],
                 autoStart: true,
                 loop: true
             }}
