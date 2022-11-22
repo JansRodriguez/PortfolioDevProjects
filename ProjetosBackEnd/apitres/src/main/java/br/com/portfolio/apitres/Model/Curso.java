@@ -2,7 +2,6 @@ package br.com.portfolio.apitres.Model;
 
 import java.sql.Date;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -24,13 +23,11 @@ public class Curso {
 
     private String nome;
 
-    @Column(name = "descrição")
     private String descricao;
 
-    private int carga;
+    private String carga;
 
-    private int totaulas;
+    private String totaulas;
 
-    @Column(name = "dataConclusão")
     private Date dataConclusao;
 }
