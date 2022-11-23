@@ -9,7 +9,6 @@ const App = ()=>{
         <>
             <Header/>
             <Typewriter/>
-            <Footer/>
         </>
     )
 }
