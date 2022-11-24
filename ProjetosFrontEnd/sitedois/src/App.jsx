@@ -19,6 +19,7 @@ const App = ()=>{
             {/* <Typewriter/> */}
             <Routes>
                 <Route path='/' element={<Home/>}/>
+                <Route path='/'/>
             </Routes>
         </Router>
     )
