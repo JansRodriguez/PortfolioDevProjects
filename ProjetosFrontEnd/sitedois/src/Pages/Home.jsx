@@ -1,5 +1,12 @@
 import Typewriter from '../Layout/Typewriter';
 
+import Footer from '../Layout/Footer';
+
 export default()=>{
-    return <Typewriter/>
+    return(
+    <div>
+        <Typewriter/>
+        {/* <Footer/> */}
+    </div>
+    )
 }

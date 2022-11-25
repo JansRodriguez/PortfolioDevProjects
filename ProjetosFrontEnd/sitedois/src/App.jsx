@@ -5,17 +5,16 @@ import './App.css';
 import Header from './Layout/Header';
 
 import Home from './Pages/Home';
-import Footer from './Layout/Footer';
+import Elements from './Pages/Elements';
 
 
 const App = ()=>{
     return(
         <Router>
             <Header/>
-            
-            
             <Routes>
                 <Route path='/' element={<Home/>}/>
+                <Route path='/Elements' element={<Elements/>}/>
             </Routes>
         </Router>
     )
