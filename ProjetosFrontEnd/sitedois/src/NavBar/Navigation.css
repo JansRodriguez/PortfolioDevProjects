@@ -1,0 +1,5 @@
+.navbar li{
+    display: flex;
+    margin: auto;
+    padding: 0 50px;
+}

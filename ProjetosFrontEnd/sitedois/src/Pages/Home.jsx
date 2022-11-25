@@ -1,6 +1,5 @@
-
+import Typewriter from '../Layout/Typewriter';
 
 export default()=>{
-    return 
-    <h1>Home</h1>
+    return <Typewriter/>
 }
