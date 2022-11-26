@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rowdies&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Poppins&display=swap');
 
 .header{
-    background-color: aquamarine;
     height: 100px;
+    font-family: 'Noto Sans JP', sans-serif;  
 }
 
 .type{
     margin: auto;
     text-align: center;
     font-size: 3.6rem;
+    font-weight: 700;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -17,6 +19,9 @@
     transform: translate(-50%, -50%);
 }
 
+.footer{
+    text-align: center;
+}
 .footer a{
     text-decoration: none;
     font-family: 'Poppins', sans-serif;

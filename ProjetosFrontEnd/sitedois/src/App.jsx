@@ -6,6 +6,7 @@ import Header from './Layout/Header';
 
 import Home from './Pages/Home';
 import Elements from './Pages/Elements';
+import Footer from './Layout/Footer';
 
 
 const App = ()=>{
@@ -15,7 +16,8 @@ const App = ()=>{
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/Elements' element={<Elements/>}/>
-            </Routes>
+                </Routes>
+            <Footer/>
         </Router>
     )
 }

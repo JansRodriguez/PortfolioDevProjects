@@ -1,15 +1,20 @@
 import {Link} from "react-router-dom";
+
 import './Navigation.css';
 
 export default()=>{
     return(
-        <ul className="navbar">
-            <li >
-                <Link to='/'>Home</Link>
+        <nav className="navbar" >
+            <>
+                <img src="../public/_img/um.png" alt="" srcset="" />
+            </>
+            
+            <li className="primeiro" >
+                <Link to='/' style={{textDecoration:'none', color:'rgb(163, 138, 106)'}}>Home</Link>
             </li>
-            <li >
-                <Link to='/Elements'>Elementos</Link>
+            <li className="segundo">
+                <Link to='/Elements' style={{textDecoration: 'none', color:'rgb(163, 138, 106)'}}>Elementos</Link>
             </li>
-        </ul>
+        </nav>
     )
 }   
