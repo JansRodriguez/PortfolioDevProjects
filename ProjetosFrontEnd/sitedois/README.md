@@ -25,3 +25,8 @@ Obetivo =()=>{
     Execute o projeto react em vite.js, através do comando: npm run dev
     
 </ul>
+
+Obetivo =()=>{
+    <h1>Objetivo do projeto concluído com sucesso!</h1>
+    <img src="Resultado.png">
+} 
