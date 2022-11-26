@@ -1,13 +1,13 @@
-package br.com.projetosfullstack.api1tabela;
+package br.com.portfolio.singlepage;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Api1tabelaApplication {
+public class SinglepageApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Api1tabelaApplication.class, args);
+		SpringApplication.run(SinglepageApplication.class, args);
 	}
 
 }

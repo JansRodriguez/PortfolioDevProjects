@@ -1,10 +1,10 @@
-package br.com.projetosfullstack.api1tabela;
+package br.com.portfolio.singlepage;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Api1tabelaApplicationTests {
+class SinglepageApplicationTests {
 
 	@Test
 	void contextLoads() {
