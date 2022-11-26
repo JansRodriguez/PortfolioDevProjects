@@ -5,7 +5,7 @@ Obetivo =()=>{
     <h1> Criar página única para receber informações de cadastramentos de produtos (React) e armazenar essas informações no banco de dados (MySQL), através da conexão de back-end (Java/Spring)</h1>
 }  
 {
-<img src=''>
+<img src='' alt='Imagens das etapas'>
 }
 
 <h1>Tecnologias utilizadas</h1>
@@ -56,5 +56,5 @@ Obetivo =()=>{
 Obetivo =()=>{
     <h1>Em andamento</h1>
     <h1><!-- Objetivo do projeto concluído com sucesso! --></h1>
-    <img src="">
+    <img src=''  alt='Imagens de conclusão'>
 } 
