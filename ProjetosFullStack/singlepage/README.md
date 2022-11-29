@@ -5,13 +5,13 @@ Obetivo =()=>{
     <h1> Criar página única para receber informações de cadastramentos de produtos (via React) e armazenar essas informações no banco de dados (através MySQL), através da conexão de back-end (por Java/Spring)</h1>
 }  
 Etapas do projeto FullStack:
-1. Back-End incorporado com a Entidade, camada de serviços, repositório e rotas/controle.
+<p>1. Back-End incorporado com a Entidade, camada de serviços, repositório e rotas/controle.</p>
 {
 <img src='BackEndConcluido.png' alt='Imagens das etapas'>
 Teste do backend efetuado corretamente.
-2. 
+<p>2. Front-end (carregando...)</p>
 <img src='' alt='Imagens das etapas'>
-3. 
+<p>3. Conexão Front-end com Back-end (carregando...)</p>
 <img src='' alt='Imagens das etapas'>
 }
 
