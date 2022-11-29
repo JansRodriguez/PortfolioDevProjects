@@ -2,16 +2,16 @@
 Desenvolvendo 1º Projeto Full Stack (Front-end, Banco de Dados e Conexão Back-end)
 
 Obetivo =()=>{
-    <h1> Criar página única para receber informações de cadastramentos de produtos (via React) e armazenar essas informações no banco de dados (através MySQL), através da conexão de back-end (por Java/Spring)</h1>
+    <h3> Criar página única para receber informações de cadastramentos de produtos (via React) e armazenar essas informações no banco de dados (através MySQL), através da conexão de back-end (por Java/Spring)</h3>
 }  
-Etapas do projeto FullStack:
-<p>1. Back-End incorporado com a Entidade, camada de serviços, repositório e rotas/controle.</p>
+<h1>Etapas do projeto FullStack:</h1>
+<h2>1. Back-End incorporado com a Entidade, camada de serviços, repositório e rotas/controle.</h2>
 {
 <img src='BackEndConcluido.png' alt='Imagens das etapas'>
 Teste do backend efetuado corretamente.
-<p>2. Front-end (carregando {construindo o front-end}...)</p>
+<h2>2. Front-end (carregando {construindo o front-end}...)</h2>
 <img src='ConstruindoOFrontEnd.png' alt='Imagens das etapas'>
-<p>3. Conexão Front-end com Back-end (carregando...)</p>
+<h2>3. Conexão Front-end com Back-end (carregando...)</h2>
 <img src='' alt='Imagens das etapas'>
 }
 

@@ -1,6 +1,6 @@
 import './Components.css';
 
-export default()=>{
+export default({botao})=>{
     return (
             <form >
                 <input type="text" placeholder="Nome do Produto"  className="form-control"/>
@@ -11,10 +11,23 @@ export default()=>{
 
                 <input type="date" className="form-control"/>
 
-                <input type="button" value="Cadastrar" className="btn btn-success"/>
-                <input type="button" value="Alterar" className="btn btn-primary"/>
-                <input type="button" value="Remover" className="btn btn-danger"/>
-                <input type="button" value="Listar" className="btn btn-secondary"/>
+                {
+                    botao
+                    
+                    ?
+
+                    <input type="button" value="Cadastrar" className="btn btn-success"/>
+                    
+                    :
+
+                    <>
+                        <input type="button" value="Alterar" className="btn btn-primary"/>
+                        <input type="button" value="Remover" className="btn btn-danger"/>
+                        <input type="button" value="Listar" className="btn btn-secondary"/>
+                    </>
+                
+                }
+
             </form>
     );
 }
