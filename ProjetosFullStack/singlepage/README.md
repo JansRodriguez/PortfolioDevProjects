@@ -9,8 +9,8 @@ Etapas do projeto FullStack:
 {
 <img src='BackEndConcluido.png' alt='Imagens das etapas'>
 Teste do backend efetuado corretamente.
-<p>2. Front-end (carregando...)</p>
-<img src='' alt='Imagens das etapas'>
+<p>2. Front-end (carregando {construindo o front-end}...)</p>
+<img src='ConstruindoOFrontEnd' alt='Imagens das etapas'>
 <p>3. Conexão Front-end com Back-end (carregando...)</p>
 <img src='' alt='Imagens das etapas'>
 }
