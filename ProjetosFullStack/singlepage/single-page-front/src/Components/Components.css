@@ -12,11 +12,11 @@ form input[type= 'button']{
 }
 input:placeholder-shown{
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 form input[type = 'date']{
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 @media (max-width: 900px){

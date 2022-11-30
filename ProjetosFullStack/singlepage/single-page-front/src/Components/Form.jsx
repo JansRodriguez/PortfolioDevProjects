@@ -7,7 +7,7 @@ export default({botao})=>{
 
                 <input type="text" placeholder="Nome do Marca"  className="form-control"/>
 
-                <input type="text" placeholder="Preço do Produto"  className="form-control"/>
+                <input type="text" placeholder="R$ 0,00"  className="form-control"/>
 
                 <input type="date" className="form-control"/>
 

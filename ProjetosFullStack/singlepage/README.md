@@ -11,8 +11,9 @@ Obetivo =()=>{
 Teste do backend efetuado corretamente.
 <h2>2. Front-end (carregando {construindo o front-end}...)</h2>
 <img src='ConstruindoOFrontEnd.png' alt='Imagens das etapas'>
-<h2>3. Conexão Front-end com Back-end (carregando...)</h2>
-<img src='' alt='Imagens das etapas'>
+<h2>3. Conexão Front-end com Back-end (carregando {conexão via ThunderClient e exibição via <strong>fetch</strong>}...)</h2>
+<h3>Falta o front end receber as informações e lançar no BD.</h3>
+<img src='ConectandoOsLadosDaaplicacao.png' alt='Imagens das etapas'>
 }
 
 <h1>Tecnologias utilizadas</h1>

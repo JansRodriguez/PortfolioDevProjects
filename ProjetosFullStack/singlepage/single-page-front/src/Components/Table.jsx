@@ -1,6 +1,6 @@
 import './Components.css';
 
-export default()=>{
+export default({vetor})=>{
     return(
         <table className="table">
             <thead>
@@ -9,16 +9,23 @@ export default()=>{
                     <th>Nome</th>
                     <th>Marca</th>
                     <th>Preço</th>
-                    <th>Data Cadastrado</th>
+                    <th>Data Cadastro</th>
+                    <th>Selecionar</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+                {
+                    vetor.map((objeto, indice)=>(
+                        <tr key={indice}>
+                            <td>{indice+1}</td>
+                            <td>{objeto.nome}</td>
+                            <td>{objeto.marca}</td>
+                            <td>{objeto.preco}</td>
+                            <td>{objeto.dataCadastro}</td>
+                            <td><button className="btn btn-success">Selecionar</button></td>
+                        </tr>
+                    ))
+                }
             </tbody>
         </table>
     )
