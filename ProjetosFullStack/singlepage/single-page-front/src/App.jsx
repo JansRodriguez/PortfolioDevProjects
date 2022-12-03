@@ -35,13 +35,18 @@ export default()=>{
         .then(retorno_convertido => setProdutos(retorno_convertido));
     }, []);
 
+    //Função para obter dados do formulário
+    const dadosDigitados = (event)=>{
+        setObjetosFormulario({...objetosFormulario, [event.target.name]:event.target.value});
+    //Colocar essa função como props no formulario
+    }
 
 
     //Retorno
     return(
         <section className="elementos">
-            <p>{JSON.stringify(form)}</p>
-            <Formulario botao={btncadastrar}/> {/* O Hook useState vai ser passado para o formulario como uma propriedade, assim o componente Form.jsx recebera o useState*/}
+            <p>{JSON.stringify(objetosFormulario)}</p>
+            <Formulario botao={btncadastrar} eventoTeclado ={dadosDigitados}/> {/* O Hook useState vai ser passado para o formulario como uma propriedade, assim o componente Form.jsx recebera o useState*/}
             <Tabela vetor={produtos}/>
         </section>
     )
