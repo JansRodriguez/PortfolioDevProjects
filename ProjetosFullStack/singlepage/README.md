@@ -1,5 +1,5 @@
 # projetoIndividual
-Desenvolvendo 1º Projeto Full Stack (Front-end, Banco de Dados e Conexão Back-end)
+Desenvolvendo 1º Projeto Full Stack (Front-end, Banco de Dados e Conexão Back-end..)
 
 Obetivo =()=>{
     <h3> Criar página única para receber informações de cadastramentos de produtos (via React) e armazenar essas informações no banco de dados (através MySQL), através da conexão de back-end (por Java/Spring)</h3>
