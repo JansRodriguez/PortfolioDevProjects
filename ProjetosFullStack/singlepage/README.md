@@ -9,11 +9,11 @@ Obetivo =()=>{
 {
 <img src='BackEndConcluido.png' alt='Imagens das etapas'>
 Teste do backend efetuado corretamente.
-<h2>2. Front-end (carregando {construindo o front-end}...)</h2>
+<h2>2. Front-end, criado <strong>Formulário</strong> para inserção de dados e <strong>Tabela</strong> para listar esses dados.</h2>
 <img src='ConstruindoOFrontEnd.png' alt='Imagens das etapas'>
-<h3>Falta o front end receber as informações e enviar...</h3>
-<h2>3. Conexão Front-end com Back-end (carregando {conexão via ThunderClient e exibição via <strong>fetch</strong>}...)</h2>
-<h3>Falta o front end receber as informações e enviar no BD através do spring.</h3>
+<h3>Front end recebendo informações e enviar para o Banco de Dados (BD)</h3>
+<h2>3. Conexão Front-end com Back-end estabalecida, conexão via ThunderClient e exibição via página, usando hooks.</h2>
+<h3>Front end para receber as informações e enviar no BD através do spring.</h3>
 <img src='ConectandoOsLadosDaaplicacao.png' alt='Imagens das etapas'>
 }
 
@@ -63,7 +63,7 @@ Teste do backend efetuado corretamente.
 </ul>
 
 Obetivo =()=>{
-    <h1>Em andamento</h1>
+    <h1>Objetivo do projeto concluído com sucesso.</h1>
     <h3>Teste de validação de cadastro vindo do back-end, mostrando no Console e alert do Front-end</h3>
     <img src='ValidacaoNoFront.png'  alt='Imagens de conclusão'>
     <img src='ValidacaoNoFront2.png'  alt='Imagens de conclusão'>
