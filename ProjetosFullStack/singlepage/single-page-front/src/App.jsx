@@ -41,12 +41,37 @@ export default()=>{
     //Colocar essa função como props no formulario
     }
 
+    //Criar uma Função para enviar os dados do formulário extraido da Funçao 'dadosDigitados' para o backend e listado pelo useEffect acima
+    const dadosCadastrados = ()=>{
+        fetch('http://localhost:8080/cadastrar', {//converter fetch que é um GET em post.
+            method:'post',
+            body:JSON.stringify(objetosFormulario),
+            headers:{
+                'Content-type':'application/json',
+                'Accept':'application/json'
+            }
+        })
+        .then(retorno => retorno.json())//O then é uma 'promisse' que o que virá será convertido em JSON
+        .then(retorno_convertido => /* {console.log(retorno_convertido) - Usar o console.log para testar as validações dos campos implementadas no backEnd, obrigando o envio de todos os dados;
+        }*/
+            {
+                if (retorno_convertido.devolucao !== undefined) {
+                    alert(retorno_convertido.devolucao);
+                }
+                else{   
+                    setProdutos([...produtos, retorno_convertido]);
+                    alert('Produto cadastrado com sucesso!!');
+                }
+            }
+        )
+    }
+
 
     //Retorno
     return(
         <section className="elementos">
-            <p>{JSON.stringify(objetosFormulario)}</p>
-            <Formulario botao={btncadastrar} eventoTeclado ={dadosDigitados}/> {/* O Hook useState vai ser passado para o formulario como uma propriedade, assim o componente Form.jsx recebera o useState*/}
+            {/* //Teste: <p>{JSON.stringify(objetosFormulario)}</p> */}
+            <Formulario botao={btncadastrar} eventoTeclado ={dadosDigitados} eventoCadastrar={dadosCadastrados}/> {/* O Hook useState vai ser passado para o formulario como uma propriedade, assim o componente Form.jsx recebera o useState*/}
             <Tabela vetor={produtos}/>
         </section>
     )

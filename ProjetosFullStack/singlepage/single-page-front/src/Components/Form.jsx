@@ -1,6 +1,6 @@
 import './Components.css';
 
-export default({botao, eventoTeclado})=>{
+export default({botao, eventoTeclado, eventoCadastrar})=>{
     return (
             <form >
                 <input type="text" onChange={eventoTeclado} name="nome" placeholder="Nome do Produto"  className="form-control"/>
@@ -16,7 +16,7 @@ export default({botao, eventoTeclado})=>{
                     
                     ?
 
-                    <input type="button" value="Cadastrar" className="btn btn-success"/>
+                    <input type="button" value="Cadastrar" className="btn btn-success" onClick={eventoCadastrar}/>
                     
                     :
 

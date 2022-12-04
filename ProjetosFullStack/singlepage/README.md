@@ -64,6 +64,9 @@ Teste do backend efetuado corretamente.
 
 Obetivo =()=>{
     <h1>Em andamento</h1>
-    <h1><!-- Objetivo do projeto concluído com sucesso! --></h1>
-    <img src=''  alt='Imagens de conclusão'>
+    <h3>Teste de validação de cadastro vindo do back-end, mostrando no Console e alert do Front-end</h3>
+    <img src='ValidacaoNoFront.png'  alt='Imagens de conclusão'>
+    <img src='ValidacaoNoFront2.png'  alt='Imagens de conclusão'>
+    <h1>Objetivo do projeto concluído com sucesso!</h1>
+    <img src='ValidacaoGeralFront.png'  alt='Imagens de conclusão'>
 } 
