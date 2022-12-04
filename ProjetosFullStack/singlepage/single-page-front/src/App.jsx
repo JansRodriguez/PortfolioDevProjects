@@ -61,18 +61,29 @@ export default()=>{
                 else{   
                     setProdutos([...produtos, retorno_convertido]);
                     alert('Produto cadastrado com sucesso!!');
+                    limparFormulario();
                 }
             }
         )
     }
 
+    //Criar função para limpas os dados do formulario após cadastrar
+    const limparFormulario = () =>{
+        setObjetosFormulario(form);
+    }
+
+    //Criar função para Selecionar itens
+    const selecionarProdutos =(indice)=>{
+        setObjetosFormulario([produtos(indice)]);
+        setBtnCadastrar(false);
+    }
 
     //Retorno
     return(
         <section className="elementos">
             {/* //Teste: <p>{JSON.stringify(objetosFormulario)}</p> */}
-            <Formulario botao={btncadastrar} eventoTeclado ={dadosDigitados} eventoCadastrar={dadosCadastrados}/> {/* O Hook useState vai ser passado para o formulario como uma propriedade, assim o componente Form.jsx recebera o useState*/}
-            <Tabela vetor={produtos}/>
+            <Formulario botao={btncadastrar} eventoTeclado ={dadosDigitados} eventoCadastrar={dadosCadastrados} campos={objetosFormulario}/> {/* O Hook useState vai ser passado para o formulario como uma propriedade, assim o componente Form.jsx recebera o useState*/}
+            <Tabela vetor={produtos} selecionar={selecionarProdutos}/>
         </section>
     )
 };

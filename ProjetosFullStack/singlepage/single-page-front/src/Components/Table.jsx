@@ -1,6 +1,6 @@
 import './Components.css';
 
-export default({vetor})=>{
+export default({vetor, selecionar})=>{
     return(
         <table className="table">
             <thead>
@@ -22,7 +22,8 @@ export default({vetor})=>{
                             <td>{objeto.marca}</td>
                             <td>{objeto.preco}</td>
                             <td>{objeto.dataCadastro}</td>
-                            <td><button className="btn btn-success">Selecionar</button></td>
+                            <td><button className="btn btn-success" onClick={() => {selecionar(indice)}}>Selecionar</button></td>
+                            {/* Como função que tem parametros, precisa-se colocar um ArrowFunction */}
                         </tr>
                     ))
                 }

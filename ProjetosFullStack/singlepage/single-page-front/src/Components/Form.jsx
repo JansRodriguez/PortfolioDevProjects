@@ -1,15 +1,15 @@
 import './Components.css';
 
-export default({botao, eventoTeclado, eventoCadastrar})=>{
+export default({botao, eventoTeclado, eventoCadastrar, campos})=>{
     return (
             <form >
-                <input type="text" onChange={eventoTeclado} name="nome" placeholder="Nome do Produto"  className="form-control"/>
+                <input type="text" value={campos.nome} onChange={eventoTeclado} name="nome" placeholder="Nome do Produto"  className="form-control"/>
 
-                <input type="text" onChange={eventoTeclado} name="marca" placeholder="Nome do Marca"  className="form-control"/>
+                <input type="text" value={campos.marca} onChange={eventoTeclado} name="marca" placeholder="Nome do Marca"  className="form-control"/>
 
-                <input type="text" onChange={eventoTeclado} name="preco" placeholder="R$ 0,00"  className="form-control"/>
+                <input type="text" value={campos.preco} onChange={eventoTeclado} name="preco" placeholder="R$ 0,00"  className="form-control"/>
 
-                <input type="date"  onChange={eventoTeclado}  name="dataCadastro" className="form-control"/>
+                <input type="date" value={campos.dataCadastro} onChange={eventoTeclado}  name="dataCadastro" className="form-control"/>
 
                 {
                     botao
