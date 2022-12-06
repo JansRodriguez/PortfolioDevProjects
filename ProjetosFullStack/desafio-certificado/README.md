@@ -12,8 +12,8 @@ Obetivo =()=>{
 <h3>
     <ul>
         <li>
-            Projeto final para obter o certificado
-            Parabéns por ter chego nessa etapa, isso significa que você acompanhou o curso e quer testar seu conheciento e receber o certificado, veja abaixo a questões e faça o envio dos arquivos:
+            Projeto final para obter o certificado.
+            Parabéns por ter chego nessa etapa, isso significa que você acompanhou o curso e quer testar seu conheciento e receber o certificado. Veja abaixo as questões e faça o envio dos arquivos:
             Desenvolver uma API para gerenciar cursos, será possível: cadastrar, selecionar, alterar e remover os registros, veja abaixo os demais requisitos:
         </li>
         <li><strong>Post:</strong> Deverá ser informado o nome do curso, professor, descrição do curso, valor e segmento (exemplo: Design Gráfico ou Front-end).</li>
