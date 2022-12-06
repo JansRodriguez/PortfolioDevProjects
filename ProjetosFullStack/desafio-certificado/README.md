@@ -30,8 +30,10 @@ Obetivo =()=>{
 <h1>Etapas do projeto FullStack:</h1>
 <h2>1. Back-End incorporado com a Entidade, camada de serviços, repositório e rotas/controle.</h2>
 {
-<img src='' alt='Imagens das etapas'>
+Entidade Curso incorporada, camadas de serviços/controle(listar) aplicada. O retorno foi apenas um `[]` pois ainda esta vazio a lista, mas a conexao foi estabelecida. Camada Repositorio incorporada.
+<img src='CamadaDeServicos.png' alt='Imagens das etapas'>
 <!-- Teste do backend efetuado corretamente. -->
+<img src='' alt='Imagem da finalizacao do backend'>
 <h2>2. Front-end, ... <strong>Formulário</strong> para inserção de dados e <strong>Tabela</strong> para listar esses dados.</h2>
 <img src='.png' alt='Imagens das etapas'>
 <h2>3. Conexão Front-end com Back-end ...<!-- estabalecida, conexão via ThunderClient e exibição via página, usando hooks. --></h2>
