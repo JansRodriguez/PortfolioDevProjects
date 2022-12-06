@@ -29,7 +29,7 @@ public class CursoServico {
             return new ResponseEntity<RespostaCurso>(rc, HttpStatus.BAD_REQUEST);
         }
         else if (c.getDescricao().equals("")) {
-            rc.setRetorno("A descricao do curso precisa estar preenchida.");
+            rc.setRetorno("A descricão do curso precisa estar preenchida.");
             return new ResponseEntity<RespostaCurso>(rc, HttpStatus.BAD_REQUEST);
         }
         else if (c.getValor().equals("")) {
@@ -37,7 +37,7 @@ public class CursoServico {
             return new ResponseEntity<RespostaCurso>(rc, HttpStatus.BAD_REQUEST);
         }
         else if (c.getSegmento().equals("")) {
-            rc.setRetorno("O segmento; do curso precisa estar preenchido.");
+            rc.setRetorno("O segmento do curso precisa estar preenchido.");
             return new ResponseEntity<RespostaCurso>(rc, HttpStatus.BAD_REQUEST);
         }
         else{

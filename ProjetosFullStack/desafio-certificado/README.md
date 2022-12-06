@@ -34,6 +34,10 @@ Obetivo =()=>{
 <img src='CamadaDeServicos.png' alt='Imagens das etapas'>
 <h3>Camadas de servico e controle atualizada com os metodos do CRUD {create, read, update, delete}. As regras de negocio na camada de servico, a chamada dos metodos e rotas de controle na camada de controle.</h3>
 <img src='CamadaDeControle.png' alt='Imagens das etapas'>
+<h3>Teste de Validação da API para cadastramento de informações e requimento da obrigatoriedade dos campos a ser preenchidos.</h3>
+<img src='TesteDeValidacao.png' alt='Imagens das etapas'>
+<h3>API em funcinamento, validado.</h3>
+<img src='TesteDeValidacao2.png' alt='Imagens das etapas'>
 <!-- Teste do backend efetuado corretamente. -->
 <img src='' alt='Imagem da finalizacao do backend'>
 <h2>2. Front-end, ... <strong>Formulário</strong> para inserção de dados e <strong>Tabela</strong> para listar esses dados.</h2>
