@@ -38,6 +38,8 @@ Obetivo =()=>{
 <img src='TesteDeValidacao.png' alt='Imagens das etapas'>
 <h3>API em funcinamento, validado.</h3>
 <img src='TesteDeValidacao2.png' alt='Imagens das etapas'>
+<img src='TesteDeValidacao3.png' alt='Imagens das etapas'>
+<img src='TesteDeValidacao4.png' alt='Imagens das etapas'>
 <!-- Teste do backend efetuado corretamente. -->
 <img src='' alt='Imagem da finalizacao do backend'>
 <h2>2. Front-end, ... <strong>Formulário</strong> para inserção de dados e <strong>Tabela</strong> para listar esses dados.</h2>

@@ -42,10 +42,10 @@ public class CursoServico {
         }
         else{
             if (procedimento.equals("cadastrar")) {
-                return new ResponseEntity<Curso>(c, HttpStatus.CREATED);
+                return new ResponseEntity<Curso>(cr.save(c), HttpStatus.CREATED);
             }
             else{
-                return new ResponseEntity<Curso>(c, HttpStatus.OK);
+                return new ResponseEntity<Curso>(cr.save(c), HttpStatus.OK);
             }
         }
     }
