@@ -50,7 +50,6 @@ public class CursoServico {
         }
     }
 
-    
     //Metodo para listar/selecionar curso
     public Iterable<Curso> listarCursos(){
         return cr.findAll();

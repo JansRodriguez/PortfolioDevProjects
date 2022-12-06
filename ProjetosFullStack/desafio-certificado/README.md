@@ -30,8 +30,10 @@ Obetivo =()=>{
 <h1>Etapas do projeto FullStack:</h1>
 <h2>1. Back-End incorporado com a Entidade, camada de serviços, repositório e rotas/controle.</h2>
 {
-Entidade Curso incorporada, camadas de serviços/controle(listar) aplicada. O retorno foi apenas um `[]` pois ainda esta vazio a lista, mas a conexao foi estabelecida. Camada Repositorio incorporada.
+<h3>Entidade Curso incorporada, camadas de serviços/controle(listar) aplicada. O retorno foi apenas um `[]` pois ainda esta vazio a lista, mas a conexao foi estabelecida. Camada Repositorio incorporada.</h3>
 <img src='CamadaDeServicos.png' alt='Imagens das etapas'>
+<h3>Camadas de servico e controle atualizada com os metodos do CRUD {create, read, update, delete}. As regras de negocio na camada de servico, a chamada dos metodos e rotas de controle na camada de controle.</h3>
+<img src='CamadaDeControle.png' alt='Imagens das etapas'>
 <!-- Teste do backend efetuado corretamente. -->
 <img src='' alt='Imagem da finalizacao do backend'>
 <h2>2. Front-end, ... <strong>Formulário</strong> para inserção de dados e <strong>Tabela</strong> para listar esses dados.</h2>
