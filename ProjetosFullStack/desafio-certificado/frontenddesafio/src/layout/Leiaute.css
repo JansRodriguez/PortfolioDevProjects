@@ -1,0 +1,11 @@
+.cabecalho{
+    background-image: linear-gradient(to right, #870000, #190a05);
+    width: 100%;
+    height: 100px;
+}
+
+.rodape{
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    width: 100%;
+    height: 100px;
+}
