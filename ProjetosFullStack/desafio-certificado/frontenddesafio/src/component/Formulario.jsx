@@ -1,14 +1,14 @@
 import './Components.css';
 
-export default({botao})=>{
+export default({botao, Digitando})=>{
     return(
         <form>
             <h1>CADASTRO DE CURSOS</h1>    
-            <input type="text" name="" id="" placeholder="Nome Curso" className="form-control"/>
-            <input type="text" name="" id="" placeholder="Nome Professor" className="form-control"/>
-            <input type="text" name="" id="" placeholder="Descrição Curso" className="form-control"/>
-            <input type="text" name="" id="" placeholder="R$ 99.99" className="form-control"/>
-            <input type="text" name="" id="" placeholder="Segmento Curso" className="form-control"/>
+            <input type="text" onChange={Digitando} name="nomeCurso" id="" placeholder="Nome Curso" className="form-control"/>
+            <input type="text" onChange={Digitando} name="nomeProfessor" id="" placeholder="Nome Professor" className="form-control"/>
+            <input type="text" onChange={Digitando} name="descricao" id="" placeholder="Descrição Curso" className="form-control"/>
+            <input type="text" onChange={Digitando} name="valor" id="" placeholder="R$ 99.99" className="form-control"/>
+            <input type="text" onChange={Digitando} name="segmento" id="" placeholder="Segmento Curso" className="form-control"/>
 
             {
                 botao

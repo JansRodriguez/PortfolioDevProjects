@@ -15,6 +15,23 @@ export default()=>{
     //useState para atualizar a lista de produtos
     const [cursos, setCursos] = useState([]);
 
+    //Criando um objeto para receber as dados do formulário e usá-los futuramente para inserir na tabela.
+    const formulario = {
+        codigo: 0, 
+        nomeCurso: '',
+        nomeProfessor: '',
+        descricao: '',
+        valor: '',
+        segmento: ''
+    }
+    //useState para obter cada valor do objeto FORM
+    const[objetoForm, setObjetoForm] = useState(formulario);
+
+    //Função para pegar os dados inseridos nos campos
+    const aoDigitar =(e)=>{
+        setObjetoForm({...objetoForm, [e.target.name]: e.target.value});
+    }
+
     //useEffect para formatar a lista de cursos cadastradas
     useEffect(()=>{
         fetch("http://localhost:8080/listar")
@@ -25,9 +42,9 @@ export default()=>{
     return(
         <main className="corpo">
             <Cabecalho/>
-            <p>{JSON.stringify(cursos)}</p>
-            <Formulario botao={botaoCadastro}/>
-            <Tabela/>
+            <p>{JSON.stringify(objetoForm)}</p>
+            <Formulario botao={botaoCadastro} Digitando={aoDigitar}/>
+            <Tabela lista={cursos}/>
             <Rodape/>
         </main>
     )
