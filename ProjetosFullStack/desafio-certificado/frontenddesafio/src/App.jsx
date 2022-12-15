@@ -9,7 +9,7 @@ import { useState } from "react";
 export default()=>{
 
     //Hook para exibicao de Botoes alternados.
-    const [botaoCadastro, setBotaoCadasrtro] = useState(true);
+    const [botaoCadastro, setBotaoCadasrtro] = useState(false);
 
     return(
         <main className="corpo">

@@ -8,12 +8,12 @@
 
 <h4>Link do curso: https://ralflima.com/treinamentos/spring_boot_e_react/spring_modulo2_introducao.php</h4>
 
-Obetivo =()=>{
-<h3>
+<h1>Obetivo =()=>{</h1>
+<h4>
     <ul>
         <li>
             Projeto final para obter o certificado.
-            Parabéns por ter chego nessa etapa, isso significa que você acompanhou o curso e quer testar seu conheciento e receber o certificado. Veja abaixo as questões e faça o envio dos arquivos:
+            Parabéns por ter chego nessa etapa, isso significa que você acompanhou o curso e quer testar seu conhecimento e receber o certificado. Veja abaixo as questões e faça o envio dos arquivos:
             Desenvolver uma API para gerenciar cursos, será possível: cadastrar, selecionar, alterar e remover os registros, veja abaixo os demais requisitos:
         </li>
         <li><strong>Post:</strong> Deverá ser informado o nome do curso, professor, descrição do curso, valor e segmento (exemplo: Design Gráfico ou Front-end).</li>
@@ -23,9 +23,9 @@ Obetivo =()=>{
         <li>No front-end, teremos uma aplicação em React para poder realizar as requisições para a API de cursos.</li>
         <li>Será necessário criar validações no front-end e no back-end para a realização das requisições com a API.</li>
     </ul>
-</h3>
+</h4>
 
-}
+<h1>}</h1>
 
 <h1>Etapas do projeto FullStack:</h1>
 <h2>1. Back-End incorporado com a Entidade, camada de serviços, repositório e rotas/controle.</h2>
