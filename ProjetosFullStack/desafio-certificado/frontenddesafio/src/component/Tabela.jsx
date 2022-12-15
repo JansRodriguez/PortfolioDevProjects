@@ -16,12 +16,12 @@ export default()=>{
             </thead>
             <tbody>
                 <tr>
-                    <td>indice</td>
-                    <td>nome</td>
-                    <td>nome</td>
-                    <td>descricao</td>
-                    <td>preco</td>
-                    <td>segmento</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td><button className='btn btn-success'>Selecionar</button></td>
                 </tr>
             </tbody>
