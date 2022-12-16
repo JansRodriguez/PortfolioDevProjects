@@ -48,11 +48,11 @@
 <img src='img/DesenhandoFrontEnd2.png' alt='Imagens das etapas'>
 <h2>3. Conexão Front-end com Back-end estabalecida e exibição via página, usando hooks.</h2>
 <h3>Front-end recebendo as informações do Back-end.</h3>
-<img src='DesenhandoFullStack1.png' alt='Imagens das etapas'>
+<img src='img/DesenhandoFullStack1.png' alt='Imagens das etapas'>
 <h3>Front-end enviando as informações para o Back-end e o Back-end devolvendo na tabela abaixo.</h3>
-<img src='DesenhandoFullStack2.png' alt='Imagens das etapas'>
+<img src='img/DesenhandoFullStack2.png' alt='Imagens das etapas'>
 <h3>Trazendo a resposta da API (backend) para o front-end</h3>
-<img src='DesenhandoFullStack3.png' alt='Imagens das etapas'>
+<img src='img/DesenhandoFullStack3.png' alt='Imagens das etapas'>
 }
 
 <h1>Tecnologias utilizadas</h1>
