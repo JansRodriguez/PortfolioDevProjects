@@ -1,6 +1,6 @@
 import './Components.css';
 
-export default({lista})=>{
+export default({lista, selecionar})=>{
     return(
         <table className="table">
             <thead>
@@ -24,7 +24,7 @@ export default({lista})=>{
                             <td>{objeto.descricao}</td>
                             <td>R${objeto.valor}</td>
                             <td>{objeto.segmento}</td>
-                            <td><button className='btn btn-success'>Selecionar</button></td>
+                            <td><button className='btn btn-success' onClick={()=>{selecionar(i)}}>Selecionar</button></td>
                         </tr>
                     ))
                 }

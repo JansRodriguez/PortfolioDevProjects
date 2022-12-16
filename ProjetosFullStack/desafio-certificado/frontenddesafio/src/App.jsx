@@ -11,6 +11,11 @@ export default()=>{
     //Hook para exibicao de Botoes alternados.
     //UseState para mudar a visibilidade dos botões
     const [botaoCadastro, setBotaoCadasrtro] = useState(true);
+    //Função para mudar o estado do botãoCadastrar
+    const selecionarCursos =(i)=>{
+        setBotaoCadasrtro(false);
+        setObjetoForm(cursos[i]);
+    }
 
     //Criando um objeto para receber as dados do formulário e usá-los futuramente para inserir na tabela.
     const formulario = {
@@ -45,10 +50,16 @@ export default()=>{
             else{
                 setCursos([...cursos, retornoApi_convertido]);
                 alert("Cadastramento realizado com sucesso!!!");
+                limparFormulario();
             }
         }
             
             )
+    }
+    //Função para Limpar os campos dos formulários apos o cadastramento
+    const limparFormulario =()=>{
+        setObjetoForm(formulario);
+        setBotaoCadasrtro(true);
     }
     
     //useState para atualizar a lista de produtos
@@ -64,8 +75,8 @@ export default()=>{
         <main className="corpo">
             <Cabecalho/>
             {/* TESTE DE RETORNO NO FRONT-END <p>{JSON.stringify(objetoForm)}</p> */}
-            <Formulario botao={botaoCadastro} Digitando={aoDigitar} cadastrar={aoCadastrar}/>
-            <Tabela lista={cursos}/>
+            <Formulario botao={botaoCadastro} Digitando={aoDigitar} cadastrar={aoCadastrar} objeto={objetoForm} limpar={limparFormulario}/>
+            <Tabela lista={cursos} selecionar={selecionarCursos}/>
             <Rodape/>
         </main>
     )
