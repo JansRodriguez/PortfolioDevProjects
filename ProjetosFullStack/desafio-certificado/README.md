@@ -46,9 +46,13 @@
 <img src='img/DesenhandoFrontEnd.png' alt='Imagens das etapas'>
 <h3>Melhorando a aparencia do Front-end.</h3>
 <img src='img/DesenhandoFrontEnd2.png' alt='Imagens das etapas'>
-<h2>3. Conexão Front-end com Back-end ...<!-- estabalecida, conexão via ThunderClient e exibição via página, usando hooks. --></h2>
-<h3>Front end para receber as informações e enviar no BD através do spring.</h3>
-<img src='.png' alt='Imagens das etapas'>
+<h2>3. Conexão Front-end com Back-end estabalecida e exibição via página, usando hooks.</h2>
+<h3>Front-end recebendo as informações do Back-end.</h3>
+<img src='DesenhandoFullStack1.png' alt='Imagens das etapas'>
+<h3>Front-end enviando as informações para o Back-end e o Back-end devolvendo na tabela abaixo.</h3>
+<img src='DesenhandoFullStack2.png' alt='Imagens das etapas'>
+<h3>Trazendo a resposta da API (backend) para o front-end</h3>
+<img src='DesenhandoFullStack3.png' alt='Imagens das etapas'>
 }
 
 <h1>Tecnologias utilizadas</h1>
@@ -96,7 +100,7 @@
     
 </ul>
 
-ResultadoObjetivo =()=>{
+<h1>ResultadoObjetivo =()=>{</h1>
 <h1>Objetivo do projeto concluído com sucesso.</h1>
 <h3>Teste de validação de cadastro vindo do back-end, mostrando no Console e alert do Front-end</h3>
 <img src='.png'  alt='Imagens de conclusão'>
@@ -104,3 +108,6 @@ ResultadoObjetivo =()=>{
 <h1><!-- Objetivo do projeto concluído com sucesso! --></h1>
 <img src='.png'  alt='Imagens de conclusão'>
 }
+
+<h1>Próximos passos em projetos partindo deste aqui:</h1>
+<h3>Criação de um site com front-end de cadastro e front-end de recebimento de informações em páginas distintas.</h3>

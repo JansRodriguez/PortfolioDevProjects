@@ -1,6 +1,6 @@
 import './Components.css';
 
-export default({botao, Digitando})=>{
+export default({botao, Digitando, cadastrar})=>{
     return(
         <form>
             <h1>CADASTRO DE CURSOS</h1>    
@@ -15,7 +15,7 @@ export default({botao, Digitando})=>{
 
                 ?
 
-                <input type="button" value="Cadastrar" className='btn btn-success'/>
+                <input type="button" value="Cadastrar" onClick={cadastrar} className='btn btn-success'/>
                 
                 :
 

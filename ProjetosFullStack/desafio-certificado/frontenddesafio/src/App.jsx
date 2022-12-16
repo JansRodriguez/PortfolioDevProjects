@@ -9,11 +9,8 @@ import { useEffect, useState } from "react";
 export default()=>{
 
     //Hook para exibicao de Botoes alternados.
-    //UseState para mudar o estado dos botões
+    //UseState para mudar a visibilidade dos botões
     const [botaoCadastro, setBotaoCadasrtro] = useState(true);
-
-    //useState para atualizar a lista de produtos
-    const [cursos, setCursos] = useState([]);
 
     //Criando um objeto para receber as dados do formulário e usá-los futuramente para inserir na tabela.
     const formulario = {
@@ -26,12 +23,36 @@ export default()=>{
     }
     //useState para obter cada valor do objeto FORM
     const[objetoForm, setObjetoForm] = useState(formulario);
-
     //Função para pegar os dados inseridos nos campos
     const aoDigitar =(e)=>{
         setObjetoForm({...objetoForm, [e.target.name]: e.target.value});
     }
-
+    //Função para Cadastrar cursos - essa requisição envia para o back-end (e o useEffect traz do backend na tabela)
+    const aoCadastrar =()=>{
+        fetch("http://localhost:8080/cadastrar", {
+            method: 'post',
+            body:JSON.stringify(objetoForm),
+            headers:{
+                'Content-type': 'application/json',
+                'Accept': 'application/json'
+            }
+        })
+        .then(retornoApi => retornoApi.json())
+        .then(retornoApi_convertido => {
+            if (retornoApi_convertido.retorno !== undefined) {
+                alert(retornoApi_convertido.retorno)
+            }
+            else{
+                setCursos([...cursos, retornoApi_convertido]);
+                alert("Cadastramento realizado com sucesso!!!");
+            }
+        }
+            
+            )
+    }
+    
+    //useState para atualizar a lista de produtos
+    const [cursos, setCursos] = useState([]);
     //useEffect para formatar a lista de cursos cadastradas
     useEffect(()=>{
         fetch("http://localhost:8080/listar")
@@ -42,8 +63,8 @@ export default()=>{
     return(
         <main className="corpo">
             <Cabecalho/>
-            <p>{JSON.stringify(objetoForm)}</p>
-            <Formulario botao={botaoCadastro} Digitando={aoDigitar}/>
+            {/* TESTE DE RETORNO NO FRONT-END <p>{JSON.stringify(objetoForm)}</p> */}
+            <Formulario botao={botaoCadastro} Digitando={aoDigitar} cadastrar={aoCadastrar}/>
             <Tabela lista={cursos}/>
             <Rodape/>
         </main>
