@@ -71,11 +71,74 @@ export default()=>{
         .then(retorno_convertido => setCursos(retorno_convertido));
     }, []);
 
+    //Função para atualizar itens da Tabela - essa função buscar do banckend a requisição para alterar
+    const alterar =()=>{
+        fetch('http://localhost:8080/atualizar', {
+            method:'put',
+            body:JSON.stringify(objetoForm),
+            headers:{
+                'Content-type': 'application/json',
+                'Accept': 'application/json'
+            }
+        })
+        .then(retornoApi => retornoApi.json())
+        .then(retornoApi_convertido =>{
+            if (retornoApi_convertido.retorno !== undefined) {
+                alert(retornoApi_convertido.retorno);
+            }
+            else{
+                //Copia da lista para fazer a alteração
+                let listaCopia = [...cursos];
+                //Objeto 'curso' para especificar qual item será removido.
+                let indice = listaCopia.findIndex((curso)=>{
+                    return curso.codigo === objetoForm.codigo
+                });
+                //Atualizar lista cópia
+                listaCopia[indice] = objetoForm;
+                //Fazer com que a lista original receba a lista copia com o item deletado
+                setCursos(listaCopia);
+                //Mensagem e limpeza do formulário
+                alert("Dados atualizados com sucesso!!");
+                limparFormulario();
+            }
+        })
+    }
+
+    //Função para Remover itens da Tabela - essa funçao busca do backend a requisição de deletar
+    const remover =()=>{
+        fetch("http://localhost:8080/deletar"+objetoForm.codigo, {
+            method:'delete',
+            headers:{
+                'Content-type': 'application/json',
+                'Accept': 'application/json'
+            }
+        })
+        .then(retornoApi => retornoApi.json())
+        .then(retornoApi_convertido => {
+
+            //Mensagem de Exclusão do itens (cursos)
+            alert(retornoApi_convertido.retorno)
+
+            //Cópia da lista de cursos
+            let listaCopia = [...cursos];
+            //Objeto 'curso' para especificar qual item será removido.
+            let indice = listaCopia.findIndex((curso)=>{
+                return curso.codigo === objetoForm.codigo;
+            });
+            //Removendo itens da Copia da Lista
+            listaCopia.splice(indice, 1); //O numero 1 é para indicar que apenas 1 elementos será removido.
+            //Fazer com que a lista original receba a lista copia com o item deletado
+            setCursos(listaCopia);
+            //Limpando os campos do formulario
+            limparFormulario();
+        })
+    }
+
     return(
         <main className="corpo">
             <Cabecalho/>
             {/* TESTE DE RETORNO NO FRONT-END <p>{JSON.stringify(objetoForm)}</p> */}
-            <Formulario botao={botaoCadastro} Digitando={aoDigitar} cadastrar={aoCadastrar} objeto={objetoForm} limpar={limparFormulario}/>
+            <Formulario botao={botaoCadastro} Digitando={aoDigitar} cadastrar={aoCadastrar} objeto={objetoForm} limpar={limparFormulario} remover={remover}/>
             <Tabela lista={cursos} selecionar={selecionarCursos}/>
             <Rodape/>
         </main>

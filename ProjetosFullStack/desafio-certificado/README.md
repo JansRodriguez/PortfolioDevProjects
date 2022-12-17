@@ -103,10 +103,9 @@
 <h1>ResultadoObjetivo =()=>{</h1>
 <h1>Objetivo do projeto concluído com sucesso.</h1>
 <h3>Teste de validação de cadastro vindo do back-end, mostrando no Console e alert do Front-end</h3>
-<img src='.png'  alt='Imagens de conclusão'>
-<img src='.png'  alt='Imagens de conclusão'>
-<h1><!-- Objetivo do projeto concluído com sucesso! --></h1>
-<img src='.png'  alt='Imagens de conclusão'>
+
+<h1>Objetivo do projeto concluído com sucesso!</h1>
+<img src='img/DesenhandoFullStack3.png'  alt='Imagens de conclusão'>
 }
 
 <h1>Próximos passos em projetos partindo deste aqui:</h1>

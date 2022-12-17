@@ -1,6 +1,6 @@
 import './Components.css';
 
-export default({botao, Digitando, cadastrar, objeto, limpar})=>{
+export default({botao, Digitando, cadastrar, objeto, limpar, remover})=>{
     return(
         <form>
             <h1>CADASTRO DE CURSOS</h1>    
@@ -22,7 +22,7 @@ export default({botao, Digitando, cadastrar, objeto, limpar})=>{
                 <>
     
                     <input type="button" value="Alterar" className='btn btn-warning'/>
-                    <input type="button" value="Excluir" className='btn btn-danger'/>
+                    <input type="button" value="Excluir"  onClick={remover} className='btn btn-danger'/>
                     <input type="button" value="Cancelar" onClick={limpar} className='btn btn-info'/>
                 </>
             }
