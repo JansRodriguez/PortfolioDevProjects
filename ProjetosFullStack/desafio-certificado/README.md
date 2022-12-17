@@ -106,6 +106,10 @@
 
 <h1>Objetivo do projeto concluído com sucesso!</h1>
 <img src='img/DesenhandoFullStack4.png'  alt='Imagens de conclusão'>
+<h1>Botão de atualizar funcionando</h1>
+<img src='img/DesenhandoFullStack5.png'  alt='Imagens de conclusão'>
+<h1>Botão de excluir funcionando</h1>
+<img src='img/DesenhandoFullStack6.png'  alt='Imagens de conclusão'>
 }
 
 <h1>Próximos passos em projetos partindo deste aqui:</h1>
