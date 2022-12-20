@@ -138,7 +138,7 @@ export default()=>{
         <main className="corpo">
             <Cabecalho/>
             {/* TESTE DE RETORNO NO FRONT-END <p>{JSON.stringify(objetoForm)}</p> */}
-            <Formulario botao={botaoCadastro} Digitando={aoDigitar} cadastrar={aoCadastrar} objeto={objetoForm} limpar={limparFormulario} remover={remover}/>
+            <Formulario botao={botaoCadastro} Digitando={aoDigitar} cadastrar={aoCadastrar} objeto={objetoForm} limpar={limparFormulario} remover={remover} alterar={alterar}/>
             <Tabela lista={cursos} selecionar={selecionarCursos}/>
             <Rodape/>
         </main>
