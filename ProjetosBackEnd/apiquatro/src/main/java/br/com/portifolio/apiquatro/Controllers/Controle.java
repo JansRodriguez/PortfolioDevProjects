@@ -41,11 +41,5 @@ public class Controle {
         return acaoBanco.findAll();
     }
 
-    //Rota para listar por itens cadastrados
-    @GetMapping("/listar/nome/{nome}")
-    public List<Modelo> listarPessoa(@PathVariable String nome){
-        return acaoBanco.findByNome(nome);
-    }
-
 
 }

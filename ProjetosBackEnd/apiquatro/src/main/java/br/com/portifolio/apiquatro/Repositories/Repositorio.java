@@ -11,6 +11,4 @@ import br.com.portifolio.apiquatro.Models.Modelo;
 public interface Repositorio extends CrudRepository<Modelo, Integer>{
     
     List<Modelo> findAll();
-
-    List<Modelo> findByNome(String nome);
 }
