@@ -9,6 +9,12 @@ import br.com.portifolio.apiquatro.Models.Modelo;
 
 @Repository
 public interface Repositorio extends CrudRepository<Modelo, Integer>{
-    
+   
+    //Listar todos
     List<Modelo> findAll();
+
+    //Listar por critério
+    Modelo findByCodigo(int codigo);
+    List<Modelo> findByNome(String nome);
+    Modelo findByIdade(int idade);
 }
